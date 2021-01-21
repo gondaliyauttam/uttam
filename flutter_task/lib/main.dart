@@ -9,7 +9,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await GlobalConfiguration().loadFromAsset("configuration");
   Constants.prefs = await SharedPreferences.getInstance();
   runApp(MyApp());
